@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Chat</title>
+
+      <title>IM Renderer Page</title>
+
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <base target="_self"/>
+
+
+        
+        &lt;table class=&quot;msgText&quot;&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;errorAlertIco&quot;&gt;&lt;img src=&quot;res://instant-message.dll/#10/#2415&quot; /&gt;&lt;/td&gt;
+            &lt;td class=&quot;boxedMessageText&quot;&gt;It appears that you do not have JavaScript enabled, please contact your adminitrator.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;            
+    
+
+  <style type="text/css">body{font-family: Segoe UI;font-size: 9pt;} .messageTable{width: 500px;} .buddyName{padding-top: 3px;padding-right: 0px;padding-bottom: 3px;padding-left: 8px;font-weight: bold;word-wrap: break-word;} .timeStamp{white-space: nowrap;color: #AAAAAA;font-weight: normal;vertical-align: top;padding-right: 11px;padding-left: 11px;} .dateRollover{padding-top: 3px;padding-right: 0px;padding-bottom: 3px;padding-left: 8px;font-weight: bold;word-wrap: break-word;vertical-align: middle;text-align: center;color: #1E2126;} .hiddenRow td{height: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;} .partyMsgText{color: #808080;font-style: italic;font-size: 10pt;}</style>
+ </head>
+
+
+ <body bgcolor="#ffffff">
+      <div class="timestampSizeCalulator timestamp" id="calculator"/>
+
+      <div class="messageBox" id="messageBox" style="height: 784px;">
+         <div class="show_more_button_div" id="show_more_button_up_div" style="display: none;">
+            <a class="show_more_button" id="show_more_button_up" href="javascript:;">
+               <span class="btn-left-up" id="showMoreLeft-up"/>
+
+               <span class="btn-middle" id="showMoreMiddle-up"/>
+
+               <span class="btn-right" id="showMoreRight-up"/>
+
+        </a>
+        
+      </div>
+
+         <div class="show_more_button_div" id="show_more_search_button_up_div" style="display: none;">
+            <a class="show_more_button" id="show_more_search_button_up" href="javascript:;">
+               <span class="btn-left-up" id="showMoreLeft-Search-up"/>
+
+               <span class="btn-middle" id="showMoreMiddle-Search-up"/>
+
+               <span class="btn-right" id="showMoreRight-Search-up"/>
+
+        </a>
+        
+      </div>
+
+           <div class="messageNoResult_class" id="messageNoResults_div" style="display: none;">
+                <span id="messageNoResults_text_1"/>
+    <br/>
+
+                <span id="messageNoResults_text_2"/>
+
+        </div>
+
+           <div class="messageTableDiv" id="messageTableDiv">
+    <table class="messageTable" id="messageTable">
+     <colgroup>
+      <col/>
+      <col width="114" id="timeStampCol"/>
+     </colgroup>
+     <tbody id="messageTableBody">
+      <tr class="hiddenRow">
+       <td/>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="firstGroupName">
+       <td class="dateRollover" id="msg_id_493" colspan="2">Friday, April 29, 2016</td>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_494" style="color: rgb(170, 170, 170);">Sunil Bisht</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText historicalMsgText" id="msg_id_492">
+        <span style="font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>Hey Valentina</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">12:48 AM</td>
+      </tr>
+      <tr class="msg">
+       <td class="msgText historicalMsgText" id="msg_id_495">
+        <span style="font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>Let me know when you done with meeting</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">12:48 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_497_dividerLine">
+       <td id="msg_id_497" colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_497" style="color: rgb(44, 100, 150);">Valentina Kalatcheva</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_496">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>hello</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:02 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_499_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_499" style="color: rgb(22, 136, 79);">Sunil Bisht</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_498">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>hey , how are you??/</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:02 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_501_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_501" style="color: rgb(44, 100, 150);">Valentina Kalatcheva</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_500">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>Good, go w are you?</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:02 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_503_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_503" style="color: rgb(22, 136, 79);">Sunil Bisht</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_502">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>I know you are busy , but I have some task and for those I need your help</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:03 AM</td>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_504">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>I am awesome as usual</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:03 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_506_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_506" style="color: rgb(44, 100, 150);">Valentina Kalatcheva</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_505">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>ok...</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:03 AM</td>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_507">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>what do you need?</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:03 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_509_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_509" style="color: rgb(22, 136, 79);">Sunil Bisht</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_508">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>As a software developer I need to know what open source libraries are used in the Telemetry API so I can obtain approval from the Open Source Review Board</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:03 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_511_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_511" style="color: rgb(44, 100, 150);">Valentina Kalatcheva</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_510">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>a-ha!</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:04 AM</td>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_512">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>as luck would have it...</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:04 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_514_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_514" style="color: rgb(22, 136, 79);">Sunil Bisht</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_513">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>this is the task assigned to me, to collect information from you</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:04 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_516_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_516" style="color: rgb(44, 100, 150);">Valentina Kalatcheva</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_515">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>we have done that already though</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:04 AM</td>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_517">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>why do you need to do that again?</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:04 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_519_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_519" style="color: rgb(22, 136, 79);">Sunil Bisht</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_518">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>no, I am taking about any other open source, respect what you told me</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:05 AM</td>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_520">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>as far I know, we dont have more than Maven, tomcat , spring in telemetry API</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:06 AM</td>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_521">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>I mean any Thirdparty JAR or reference ??</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:06 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_523_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_523" style="color: rgb(44, 100, 150);">Valentina Kalatcheva</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_522">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>ok, one sec</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:06 AM</td>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_524">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>these is a maven command you can use to get that info</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:07 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_526_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_526" style="color: rgb(22, 136, 79);">Sunil Bisht</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_525">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>great!!!</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:07 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_528_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_528" style="color: rgb(44, 100, 150);">Valentina Kalatcheva</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_527">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>what IED are you usning? IntelliJ?</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:07 AM</td>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_529">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>IDE</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:07 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_531_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_531" style="color: rgb(22, 136, 79);">Sunil Bisht</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_530">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>STS</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:07 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_533_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_533" style="color: rgb(44, 100, 150);">Valentina Kalatcheva</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_532">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>not familiar with that           <img title=":(" src="file:///C:/Program Files (x86)/Cisco Systems/Cisco Jabber/Emoticons/sad@2x.png"/>
+         </div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:07 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_535_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_535" style="color: rgb(22, 136, 79);">Sunil Bisht</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_534">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>ohh!!!</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:07 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_537_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_537" style="color: rgb(44, 100, 150);">Valentina Kalatcheva</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_536">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>can you run this:</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:07 AM</td>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_538">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>mvn dependency:tree</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:08 AM</td>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_539">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>[INFO] com.symantec.iss:TelemetryWebService:war:0.1.0-SNAPSHOT          <br/>
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:1.3.0.RELEASE:compile          <br/>
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:1.3.0.RELEASE:compile          <br/>
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:8.0.28:compile          <br/>
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:8.0.28:compile          <br/>
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-logging-juli:jar:8.0.28:compile          <br/>
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:8.0.28:compile          <br/>
+[INFO] |  +- org.springframework.boot:spring-boot-starter-validation:jar:1.3.0.RELEASE:compile          <br/>
+[INFO] |  |  \- org.hibernate:hibernate-validator:jar:5.2.2.Final:compile          <br/>
+[INFO] |  |     +- javax.validation:validation-api:jar:1.1.0.Final:compile          <br/>
+[INFO] |  |     +- org.jboss.logging:jboss-logging:jar:3.3.0.Final:compile          <br/>
+[INFO] |  |     \- com.fasterxml:classmate:jar:1.1.0:compile          <br/>
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.6.3:compile          <br/>
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.6.3:compile          <br/>
+[INFO] |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.6.3:compile          <br/>
+[INFO] |  +- org.springframework:spring-web:jar:4.2.3.RELEASE:compile          <br/>
+[INFO] |  \- org.springframework:spring-webmvc:jar:4.2.3.RELEASE:compile          <br/>
+[INFO] +- org.springframework.boot:spring-boot-starter:jar:1.3.0.RELEASE:compile          <br/>
+[INFO] |  +- org.springframework.boot:spring-boot:jar:1.3.0.RELEASE:compile          <br/>
+[INFO] |  +- org.springframework.boot:spring-boot-autoconfigure:jar:1.3.0.RELEASE:compile          <br/>
+[INFO] |  +- org.springframework:spring-core:jar:4.2.3.RELEASE:compile          <br/>
+[INFO] |  \- org.yaml:snakeyaml:jar:1.16:runtime          <br/>
+[INFO] +- org.springframework.boot:spring-boot-starter-log4j2:jar:1.3.0.RELEASE:compile          <br/>
+[INFO] |  +- org.slf4j:jcl-over-slf4j:jar:1.7.13:compile          <br/>
+[INFO] |  \- org.slf4j:jul-to-slf4j:jar:1.7.13:compile          <br/>
+[INFO] +- org.springframework.security:spring-security-core:jar:4.0.0.RELEASE:compile          <br/>
+[INFO] |</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:08 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_541_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_541" style="color: rgb(22, 136, 79);">Sunil Bisht</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_540">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>fasterXML is part of jackson , right ??/</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:09 AM</td>
+      </tr>
+      <tr class="dividerLine" id="msg_id_543_dividerLine">
+       <td colspan="2"/>
+      </tr>
+      <tr class="groupName">
+       <td class="buddyName" id="msg_id_543" style="color: rgb(44, 100, 150);">Valentina Kalatcheva</td>
+       <td class="timeStamp"/>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_542">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>take a look at this</div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:11 AM</td>
+      </tr>
+      <tr class="msg">
+       <td class="msgText normalMsgText" id="msg_id_544">
+        <span style="color: rgb(26, 26, 26); font-family: Segoe UI; font-size: 10pt; font-style: normal; font-weight: normal; text-decoration: none;">
+         <div>
+          <a href="https://maven.apache.org/plugins/maven-dependency-plugin/">https://maven.apache.org/plugins/maven-dependency-plugin/</a>
+         </div>
+        </span>
+       </td>
+       <td title="Friday, April 29, 2016" class="timeStamp">1:11 AM</td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+
+         <div class="show_more_button_div" id="show_more_button_down_div" style="display: none;">
+            <a class="show_more_button" id="show_more_button_down" href="javascript:;">
+               <span class="btn-left-down" id="showMoreLeft-down"/>
+
+               <span class="btn-middle" id="showMoreMiddle-down"/>
+
+               <span class="btn-right" id="showMoreRight-down"/>
+
+        </a>
+        
+      </div>
+
+         <div class="show_more_button_div" id="show_more_search_button_down_div" style="display: none;">
+            <a class="show_more_button" id="show_more_search_button_down" href="javascript:;">
+               <span class="btn-left-down" id="showMoreLeft-Search-down"/>
+
+               <span class="btn-middle" id="showMoreMiddle-Search-down"/>
+
+               <span class="btn-right" id="showMoreRight-Search-down"/>
+
+        </a>
+
+      </div>
+
+         <div class="show_more_button_div" id="show_most_recent_search_button_div" style="display: none;">
+            <a class="show_more_button" id="show_most_recent_search_button" href="javascript:;">
+               <span class="btn-most-recent-left" id="showMostRecentLeft-Search-down"/>
+
+               <span class="btn-middle" id="showMostRecentMiddle-Search-down"/>
+
+               <span class="btn-right" id="showMostRecentRight-Search-down"/>
+
+        </a>
+        
+      </div>
+
+    </div>
+
+
+
+</body>
+</html>
